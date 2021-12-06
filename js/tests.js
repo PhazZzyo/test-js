@@ -16,8 +16,6 @@ for (const element of array1) {
  // Change code above this line
 }
 
-getCommonElements([1, 2, 3], [2, 4])
-
 // -------------- --------- ---- ====***** ( Exercise ) #23
 function filterArray(numbers, value) {
    // Change code below this line
