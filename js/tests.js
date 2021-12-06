@@ -10,9 +10,9 @@ function getCommonElements(array1, array2) {
 for (const element of array1) {
     if (array2.includes(element)) {     
       similar.push(element);
-    }
-}
-
+  }
+  }
+  return similar;
  // Change code above this line
 }
 
