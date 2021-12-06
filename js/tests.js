@@ -5,14 +5,14 @@
 function getCommonElements(array1, array2) {
   // Change code below this line
   
-  const similar = [];
+   const array3 = [];
 
 for (const element of array1) {
     if (array2.includes(element)) {     
-      similar.push(element);
+      array3.push(element);
   }
   }
-  return similar;
+  return array3;
  // Change code above this line
 }
 
