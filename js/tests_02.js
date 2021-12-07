@@ -1,4 +1,115 @@
 "use strict";
+
+// -------------- --------- ---- ====***** ( Exercise ) #32
+
+function includes(array, value) {
+  // Change code below this line
+for (let i = 0; i <= array.length; i += 1) {
+    if (array[i] === value) {
+      return true;
+    }  
+  }
+  return false;
+  
+  // Change code above this line
+}
+
+// -------------- --------- ---- ====***** ( Exercise ) #31
+
+function findNumber(start, end, divisor) {
+  // Change code below this line
+  let number;
+
+  for (let i = start; i < end; i += 1) {
+    if (i % divisor === 0) {
+      return i;      
+    }
+  } 
+  // Change code above this line
+}
+
+
+// -------------- --------- ---- ====***** ( Exercise ) #30
+
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
+}
+
+// -------------- --------- ---- ====***** ( Exercise ) #29
+
+function getEvenNumbers(start, end) {
+   // Change code below this line
+
+const evenNumbers = [];
+let array = [];
+ for (let i = start; i <= end; i += 1) { // Change this line
+    array.push(i);
+  }  
+ for (const number of array) {
+
+    if (number % 2 === 0) {
+      evenNumbers.push(number);
+    }
+ }
+ 
+  return evenNumbers;
+
+  // function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   const evenNumbers = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       evenNumbers.push(i);
+//     }
+//   }
+//   return evenNumbers;
+//   // Change code above this line
+// }
+
+
+    // Change code above this line
+  }
+
+// -------------- --------- ---- ====***** ( Exercise ) #27
+
+function filterArray(numbers, value) {
+  // Change code below this line
+  const filteredNumbers = [];
+
+  for (const number of numbers) {
+
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  }  
+  
+  return filteredNumbers;
+  // Change code above this line
+}
+
+// -------------- --------- ---- ====***** ( Exercise ) #26
+
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+
+   
+  for (const price of order) {
+  total += price;
+}
+
+  // Change code above this line
+  return total;
+}
+
+
 // -------------- --------- ---- ====***** ( Exercise ) #25
 
 function getCommonElements(array1, array2) {
@@ -15,9 +126,7 @@ for (const element of array1) {
  // Change code above this line
 }
 
-
-
-console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
 
 
 // -------------- --------- ---- ====***** ( Exercise ) #23
