@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 4.12.2021 )
 
@@ -13,3 +13,6 @@ const fruits = [];
 }
   
   console.log(`Fruits are: ${fruits}`);
+
+
+  
