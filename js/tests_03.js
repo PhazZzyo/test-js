@@ -1,26 +1,82 @@
 // "use strict";
 
-// -------------- --------- ---- ====***** ( Exercise ) #18
+// // -------------- --------- ---- ====***** ( Exercise ) #20
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function getProductPrice(productName) {
-  // Change code below this line
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
 
-  const productPrice = [];
+// let totalPrice = 0;
+
+//   for (const product of products) {
+//     if (product.name === productName) {
+//      totalPrice = product.price * product.quantity; 
+//     }        
+// }
+// return totalPrice;
+
+//   // Пиши код выше этой строки
+// }
+
+
+// // -------------- --------- ---- ====***** ( Exercise ) #19
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const propValues = [];
+
+//   for (const product of products) {
+//     if ("name" === propName) {
+//      propValues.push(product.name); 
+//     }
+//     if ("price" === propName) {
+//      propValues.push(product.price); 
+//     }
+//     if ("quantity" === propName) {
+//      propValues.push(product.quantity); 
+//     }
+     
+// }
+// return propValues;
+
+//   // Change code above this line
+// }
+
+// // -------------- --------- ---- ====***** ( Exercise ) #18
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+
+//   let productPrice = null;
   
-  for (const product of products) {
-    if productName = Object.product(name);
-    productPrice.push(product.price);
-}
-return productPrice;
-  // Change code above this line
-}
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       productPrice = product.price;    
+//       }
+// }
+// return productPrice;
+//   // Change code above this line
+// }
 
 // // -------------- --------- ---- ====***** ( Exercise ) #17
 
