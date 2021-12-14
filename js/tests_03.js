@@ -1,5 +1,131 @@
 // "use strict";
 
+// // -------------- --------- ---- ====***** ( Exercise ) #40
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+
+//     const potionIndex = this.potions.indexOf(oldName);
+// this.potions.splice(potionIndex, 1, newName);
+
+//     // Change code above this line
+//   },
+// };
+
+// // -------------- --------- ---- ====***** ( Exercise ) #39
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+
+// const potionIndex = this.potions.indexOf(potionName);
+//      this.potions.splice(potionIndex, 1);
+
+//     // Change code above this line
+//   },
+// };
+
+// // -------------- --------- ---- ====***** ( Exercise ) #38
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+   
+//      this.potions.push(potionName);
+   
+
+//     // Change code above this line
+//   },
+// };
+
+// // -------------- --------- ---- ====***** ( Exercise ) #37
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+//   getPotions(){
+// return atTheOldToad.potions;
+//   }
+//   // Change code above this line
+// };
+
+// // -------------- --------- ---- ====***** ( Exercise ) #35
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1, newName);
+    
+
+//     // Change code above this line
+//   },
+// };
+
+
+// const bookShelf = {
+//   books: ["Последнее королевство"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//     this.books.splice(bookIndex, 1);
+//   },
+// };
+
+// console.log(bookShelf.getBooks()); // []
+// bookShelf.addBook("Мгла");
+// bookShelf.addBook("Страж снов");
+// console.log(bookShelf.getBooks()); // ["Последнее королевство", "Мгла", "Страж снов"]
+// bookShelf.removeBook("Мгла");
+// console.log(bookShelf.getBooks()); // ["Последнее королевство", "Страж снов"]
+
+// // -------------- --------- ---- ====***** ( Exercise ) #34
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   }
+//   // Change code above this line
+// };
+
+
+// // -------------- --------- ---- ====***** ( Exercise ) #33
+
+// // Change code below this line
+// function findMatches(array, ...args) {
+//   const matches = []; // Don't change this line  
+//    for (const element of args) {
+//     if (array.includes(element)) {
+//       matches.push(element);
+//      }
+//    }
+  
+//   // Change code above this line
+//   return matches;
+// }
+
 // // -------------- --------- ---- ====***** ( Exercise ) #32
 
 // // Change code below this line
