@@ -1,5 +1,61 @@
 // "use strict";
 
+// // -------------- --------- ---- ====***** ( Exercise ) #41
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+    getPotions() {
+      console.log(this.potions);
+    return this.potions;
+    },
+  
+  addPotion(newPotion) {
+      const array = [...this.potions];
+      console.log(array);
+    //  for (const potion of this.potions) {
+    //    array.push(potion.name);
+    //  }
+    if (array.includes(newPotion.name)) {
+      return `Error! Potion ${newPotion.name} is already in your inventory!`;
+    }
+      this.potions.push(newPotion);
+      console.log(this.potions);
+      return newPotion;
+    },
+  
+    removePotion(potionName) {
+      console.log(this.potions);
+    const array = [...this.potions];
+    const potionIndex =  array.indexOf(potionName); 
+    if (potionIndex === -1) {
+        this.potions.splice(potionIndex, 1);
+        console.log(this.potions);
+        return `Potion ${potionName} has been deleted from inventory!`;
+      }
+      console.log(this.potions);
+      return `Potion ${potionName} is not in inventory!`;
+    
+    },
+  
+  updatePotionName(oldName, newName) {
+    for (const potion of this.potions) {
+        if (potion.name === oldName) {
+            potion.name = newName;
+            console.log(this.potions);
+            return `Potion ${newName} is added to inventory!`;
+            
+     }      
+      }
+      return `Potion ${oldName} is not in inventory!`;
+  },
+  // Change code above this line  
+};
+
 // // -------------- --------- ---- ====***** ( Exercise ) #40
 
 // const atTheOldToad = {
