@@ -1,33 +1,87 @@
+// // -------------- --------- ---- ====***** ( Exercise ) #07 /////////////////////////////////////////////
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+//   // for (let i = 0; i < firstArray.length; i += 1) {
+//   //   if (secondArray.includes(firstArray[i])) {
+//   //     commonElements.push(firstArray[i]);
+//   //   }
+//   // }
+
+//   firstArray.forEach(function (index) {    
+//       if (secondArray.includes(index)) {
+//         commonElements.push(index);        
+//     }    
+//   });
+
+//   return commonElements;
+//   // Change code above this line
+// }
+
+// // -------------- --------- ---- ====***** ( Exercise ) #06 /////////////////////////////////////////////
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+// numbers.forEach(function (index) {
+//       if (index > value) {
+//       filteredNumbers.push(index);
+//     }    
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// // -------------- --------- ---- ====***** ( Exercise ) #05 /////////////////////////////////////////////
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+  
+//   orderedItems.forEach(function (index) {
+//     totalPrice += index;
+//   });
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+//     totalPrice += number;
+//   });
 // // -------------- --------- ---- ====***** ( Exercise ) #04 /////////////////////////////////////////////
 
-const pizzaPalace = {
-  pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
     
-    order(pizzaName, onSuccess, onError) {
-  if (!this.pizzas.includes(pizzaName)) {
-  return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
-            }
-  return onSuccess(pizzaName);
-},
-};
+//     order(pizzaName, onSuccess, onError) {
+//   if (!this.pizzas.includes(pizzaName)) {
+//   return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//             }
+//   return onSuccess(pizzaName);
+// },
+// };
 
-// Change code above this line
+// // Change code above this line
 
-// Callback for onSuccess
-function makePizza(pizzaName) {
-  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-}
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
 
-// Callback for onError
-function onOrderError(error) {
-  return `Error! ${error}`;
-}
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
 
-// Method calls with callbacks
-pizzaPalace.order('Smoked', makePizza, onOrderError);
-pizzaPalace.order('Four meats', makePizza, onOrderError);
-pizzaPalace.order('Big Mike', makePizza, onOrderError);
-pizzaPalace.order('Vienna', makePizza, onOrderError);
+// // Method calls with callbacks
+// pizzaPalace.order('Smoked', makePizza, onOrderError);
+// pizzaPalace.order('Four meats', makePizza, onOrderError);
+// pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// pizzaPalace.order('Vienna', makePizza, onOrderError);
 
 // function processCall(recipient, onAvailable, onNotAvailable) {
 //   // Имитируем доступеность абонента случайным числом
