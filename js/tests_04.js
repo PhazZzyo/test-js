@@ -10,10 +10,10 @@
 //   //   }
 //   // }
 
-//   firstArray.forEach(function (index) {    
+//   firstArray.forEach(function (index) {
 //       if (secondArray.includes(index)) {
-//         commonElements.push(index);        
-//     }    
+//         commonElements.push(index);
+//     }
 //   });
 
 //   return commonElements;
@@ -29,7 +29,7 @@
 // numbers.forEach(function (index) {
 //       if (index > value) {
 //       filteredNumbers.push(index);
-//     }    
+//     }
 //   });
 
 //   // Change code above this line
@@ -52,12 +52,14 @@
 
 //     totalPrice += number;
 //   });
+
 // // -------------- --------- ---- ====***** ( Exercise ) #04 /////////////////////////////////////////////
 
 // const pizzaPalace = {
 //   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
     
 //     order(pizzaName, onSuccess, onError) {
+//         console.log(onError);
 //   if (!this.pizzas.includes(pizzaName)) {
 //   return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
 //             }

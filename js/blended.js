@@ -1,18 +1,99 @@
 // "use strict";
 
+// -------------- --------- ---- ====***** ( Exercise of blended lesson 18.12.2021 )
+
+// // if car cost >= minValue 
+
+// const cars = [
+//   { brand: "Audi", cost: 11000 },
+//   { brand: "BMW", cost: 9000 },
+//   { brand: "Honda", cost: 8000 },
+//   { brand: "Tesla", cost: 40000 },
+//   { brand: "VW", cost: 7000 },
+// ];
+
+// const minValue = Number(prompt("From"));
+// let maxValue = Number(prompt("To"));
+
+// if (maxValue === 0) {
+//   maxValue = Infinity;
+//  }
+// // alternative
+// // const filterCars = cars.filter(element => element.cost >= minValue && element.cost <= maxValue);
+// // console.log(filterCars);
+
+// const filterCars = cars.filter((element) => {
+//   if (element.cost >= minValue && element.cost <= maxValue) { 
+//     return (element);
+//   }
+//   console.log(element);
+// });
+// console.log(filterCars);
+
+
+// ----------------------------------------------------------------------
+
+/* 1) Порахувати сумарний вік всіх користувачів, у которых есть ключ age */
+
+// const friends = [
+//     { name: "Anna", books: ["Bible", "Harry Potter"], age: 21 },
+//     { name: "Bob", books: ["War and peace", "Romeo and Juliet", 'Harry Potter'], age: 26 },
+//     { name: 'Denys', books: ["The Lord of the Rings", "War and peace", "The Shining"] },
+//     { name: "Alice", books: ["The Lord of the Rings", "The Shining"], age: 18 }
+// ];
+
+// const totalAge = friends.reduce((total, { age = 0 }) => total + age, 0)
+// console.log(totalAge);
+
+// alternative
+
+// const totalAge = friends.reduce((total, friend) => {
+//     console.log(!!friend.age);
+//     if (!!friend.age) {
+//         return total + friend.age
+//     } else {
+//         return total + 0
+//     }
+// }, 0)
+
+// console.log(totalAge);
+
+
+// const friends = [
+//     { name: "Anna", books: ["Bible", "Harry Potter"], age: 21 },
+//     { name: "Bob", books: ["War and peace", "Romeo and Juliet"], age: 26 },
+//     { name: "Alice", books: ["War and peace", "Romeo and Juliet"], age: 26},
+//     { name: "Oleksii", books: ["Bible","War and peace","Harry Potter",  "Romeo and Juliet"], age: 26},
+// ]
+// // Порахувати кількість книжок, у тих користувачів, у яких є книга "Harry Potter" 
+// // не використовуючи метод includes
+// //console.log(~-4);
+// //console.log(-1-(-4));
+// //перевірити користувачів на наявність потрібної книги за допомогою indexOf()
+// const searchBook = "Harry Potter";
+// const totalBooks = friends.reduce((totalCountOfBooks, user) => {
+//     //console.log(!!~user.books.indexOf(searchBook));
+//     if (!!~user.books.indexOf(searchBook)){
+//         totalCountOfBooks += user.books.length; 
+//     } else {
+//         totalCountOfBooks += 0;
+//     }
+//     return totalCountOfBooks;
+// }, 0);
+// console.log (totalBooks);
+// // якщо така книга є, то порахувати всі книжки
+
+
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 4.12.2021 )
 
-const all = ['apple', 'banana', 'tomato', 'potato', 'cucumber', 'orange', 'carrot', 'ananas'];
-const vegetables = ['tomato', 'potato', 'cucumber', 'carrot'];
-const fruits = [];
+// const all = ['apple', 'banana', 'tomato', 'potato', 'cucumber', 'orange', 'carrot', 'ananas'];
+// const vegetables = ['tomato', 'potato', 'cucumber', 'carrot'];
+// const fruits = [];
 
-  for (const element of all) {
-    if (!vegetables.includes(element)) {     
-      fruits.push(element);
-    }
-}
+//   for (const element of all) {
+//     if (!vegetables.includes(element)) {     
+//       fruits.push(element);
+//     }
+// }
   
-  console.log(`Fruits are: ${fruits}`);
-
-
-  
+//   console.log(`Fruits are: ${fruits}`);  
