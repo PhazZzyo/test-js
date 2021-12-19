@@ -1,3 +1,49 @@
+// // -------------- --------- ---- ====***** ( Exercise ) #11 /////////////////////////////////////////////
+
+// Change code below this line
+const getCommonElements = (firstArray, secondArray) => {
+  const commonElements = [];
+
+  firstArray.forEach((element) => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
+    }
+  });
+
+  // Change code above this line
+  return commonElements;
+}
+
+// // -------------- --------- ---- ====***** ( Exercise ) #11 /////////////////////////////////////////////
+
+// Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// // -------------- --------- ---- ====***** ( Exercise ) #10 /////////////////////////////////////////////
+
+// // Change code below this line
+
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+//   orderedItems.forEach((item) => {
+//     totalPrice += item;
+//   });
+//   return totalPrice;
+// };
+
+// // Change code above this line
+
 // // -------------- --------- ---- ====***** ( Exercise ) #07 /////////////////////////////////////////////
 
 // function getCommonElements(firstArray, secondArray) {
