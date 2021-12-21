@@ -2,7 +2,14 @@
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 18.12.2021 )
 
-// // if car cost >= minValue 
+// // sort latters in reverse alphabetical sorting
+
+// const newArray = ['rabbit'];
+// const mutedArray = newArray.join(' ').split('').sort().reverse().join('');
+// console.log(`rabbit in reverse alphabetical sorting = ${mutedArray}`);
+
+
+// // filter cars within price range
 
 // const cars = [
 //   { brand: "Audi", cost: 11000 },

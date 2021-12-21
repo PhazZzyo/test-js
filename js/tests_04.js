@@ -1,3 +1,188 @@
+// // -------------- --------- ---- ====***** ( Exercise ) #45 /////////////////////////////////////////////
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = books.filter((array) => array.rating > MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b));
+
+// // -------------- --------- ---- ====***** ( Exercise ) #44 /////////////////////////////////////////////
+
+// // Change code below this line
+// const sortByName = users => {
+  
+//   const sortedByName = [...users].sort((firstUser, secondUser) =>
+//   firstUser.name.localeCompare(secondUser.name)
+// );
+//   return sortedByName;
+   
+// };
+// // Change code above this line
+
+// // -------------- --------- ---- ====***** ( Exercise ) #43 /////////////////////////////////////////////
+
+// // Change code below this line
+// const sortByDescendingFriendCount = users => {
+  
+//     const sortedByDescendingFriendCount = [...users].sort(
+//   (firstUser, secondUser) => secondUser.friends.length - firstUser.friends.length
+// );
+//    return sortedByDescendingFriendCount;
+   
+// };
+// // Change code above this line
+
+// // -------------- --------- ---- ====***** ( Exercise ) #42 /////////////////////////////////////////////
+
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+  
+//   const sortedByAscendingBalance = [...users].sort(
+//   (firstUser, secondUser) => firstUser.balance - secondUser.balance
+// );
+//    return sortedByAscendingBalance;
+// };
+// // Change code above this line
+
+// // -------------- --------- ---- ====***** ( Exercise ) #41 /////////////////////////////////////////////
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((firstBook, secondBook) =>
+//   firstBook.author.localeCompare(secondBook.author)
+// );
+
+// const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) =>
+//   secondBook.author.localeCompare(firstBook.author)
+// );
+
+
+// const sortedByAscendingRating = [...books].sort(
+//   (firstBook, secondBook) => firstBook.rating - secondBook.rating
+// );
+
+// const sortedByDescentingRating = [...books].sort(
+//   (firstBook, secondBook) => secondBook.rating - firstBook.rating
+// );
+
+// // -------------- --------- ---- ====***** ( Exercise ) #40 /////////////////////////////////////////////
+
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// // -------------- --------- ---- ====***** ( Exercise ) #39 /////////////////////////////////////////////
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// // -------------- --------- ---- ====***** ( Exercise ) #38 /////////////////////////////////////////////
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// // -------------- --------- ---- ====***** ( Exercise ) #37 /////////////////////////////////////////////
+
+// // Change code below this line
+// const getTotalFriendCount = (users) => {
+// const totalFriends = users.reduce((total, user) => {
+// return total + user.friends.length;
+// }, 0);
+//     return totalFriends;
+//     };
+
+// // Change code above this line
+
+// // -------------- --------- ---- ====***** ( Exercise ) #36 /////////////////////////////////////////////
+
+// // Change code below this line
+// const calculateTotalBalance = (users) => {
+//     const totalBalance = users.reduce((total, user) => {
+//         return total + user.balance
+// }, 0);
+// return totalBalance;
+//     };
+// // Change code above this line
+
+// // -------------- --------- ---- ====***** ( Exercise ) #35 /////////////////////////////////////////////
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((total,player) => {
+//   return total + (player.playtime / player.gamesPlayed);  
+  
+// }, 0);
+
 // // -------------- --------- ---- ====***** ( Exercise ) #34 /////////////////////////////////////////////
 
 // const players = {
