@@ -1,3 +1,81 @@
+// // -------------- --------- ---- ====***** ( Exercise ) #10 /////////////////////////////////////////////
+
+// class Storage {
+//     constructor(item) {
+//         this.items = item;
+//     }
+
+//     getItems() {
+//         return this.items;
+//     }
+
+//     addItem(newItem) {
+//         this.items.push(newItem);
+//     }
+  
+//     removeItem(itemToRemove) {
+//         this.items = this.items.filter(item => !itemToRemove.includes(item))
+//     }
+
+//   // Change code above this line
+// }
+
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+// // -------------- --------- ---- ====***** ( Exercise ) #09 /////////////////////////////////////////////
+
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code below this line
+
+// getPrice() {
+//     return this.price;
+//   }
+
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+
+//   // Change code above this line
+// }
+
+// // -------------- --------- ---- ====***** ( Exercise ) #08 /////////////////////////////////////////////
+
+// class Car {
+//   // Change code below this line
+//     constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code above this line
+// }
+
+// // -------------- --------- ---- ====***** ( Exercise ) #07 /////////////////////////////////////////////
+
+// class Car {
+//   // Change code below this line
+//   constructor(brand, model, price) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code above this line
+// }
+
+
 // // -------------- --------- ---- ====***** ( Exercise ) #03 /////////////////////////////////////////////
 
 // const historyService = {
