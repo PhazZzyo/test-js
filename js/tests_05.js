@@ -1,23 +1,57 @@
-class Car {
-    // Change code below this line
-    #brand;
+// // -------------- --------- ---- ====***** ( Exercise ) #13 /////////////////////////////////////////////
 
-    constructor({ brand, model, price }) {
-        this.#brand = brand;
-        this.model = model;
-        this.price = price;
-    }
+// class Storage {
+//   // Change code below this line
+//   #items;
 
-    getBrand() {
-        return this.#brand;
-    }
+//   constructor(items) {
+//     this.#items = items;
+//   }
 
-    changeBrand(newBrand) {
-        this.#brand = newBrand;
-    }
+//   getItems() {
+//     return this.#items;
+//   }
 
-    // Change code above this line
-}
+//   addItem(newItem) {
+//     this.#items.push(newItem);
+//   }
+
+//   removeItem(itemToRemove) {
+//     this.#items = this.#items.filter(item => item !== itemToRemove);
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+
+
+// // -------------- --------- ---- ====***** ( Exercise ) #12 /////////////////////////////////////////////
+
+// class Car {
+//     // Change code below this line
+//     #brand;
+
+//     constructor({ brand, model, price }) {
+//         this.#brand = brand;
+//         this.model = model;
+//         this.price = price;
+//     }
+
+//     getBrand() {
+//         return this.#brand;
+//     }
+
+//     changeBrand(newBrand) {
+//         this.#brand = newBrand;
+//     }
+
+//     // Change code above this line
+// }
 
 // // -------------- --------- ---- ====***** ( Exercise ) #11 /////////////////////////////////////////////
 
