@@ -1,5 +1,83 @@
 // "use strict";
 
+// -------------- --------- ---- ====***** ( Exercise of blended lesson 15.01.2022 )
+// Create object with 3 keys: userName, cardName, total.
+// Create 3 methods of object: balance, add, writeoff.
+
+// const bank = {
+//     userName: 'Alex',
+//     cardName: 'Mono',
+//     userTotal: 3000,
+
+//     balance() {
+//         console.log(`User ${this.userName} have balance: ${this.userTotal}`);
+//     },
+    
+//     add(income) {
+//         console.log(`User ${this.userName} add ${income} to card: ${this.cardName}, total:${this.userTotal += income}`);
+//     },
+
+//     total() {
+//         console.log(`User ${this.userName} card ${this.cardName} balance is:${this.userTotal}`);
+//     }
+// }
+
+// bank.balance();
+// bank.add(1000);
+// bank.total();
+
+// const den = {
+//     userName: 'Den',
+//     cardName: 'Privat',
+//     userTotal: 10000,
+//   };
+
+// bank.balance.call(den)
+// bank.add.call(den, 2000)
+// bank.add.apply(den, [1000])
+// bank.total.call(den);
+
+// ---=== new task ===---
+
+// перебрать масив
+// мутировать, щоб залишилися лише унікальні id
+// якщо однакові Id сплюсувати значення qty
+
+const products = [ {
+    id : 'sku1',
+    qty: 1,
+}, {
+    id : 'sku2',
+    qty: 2,
+}, {
+    id : 'sku3',
+    qty: 3,
+}, {
+    id : 'sku1',
+    qty: 6,
+}, {
+    id : 'sku1',
+    qty: 8,
+}, {
+    id : 'sku2',
+    qty: 19,
+}, {
+    id : 'sku4',
+    qty: 1,
+    }]
+
+for (let a = 0; a < products.length; a += 1) { 
+    let element = products[a].id;    
+    for (let b = a + 1; b < products.length; b += 1)
+        if (products[b].id === element) { 
+            products[a].qty + products[b].qty;
+            products.splice(b, 1);
+            a -= 1;
+            }
+    console.log(products);
+}
+
+
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 18.12.2021 )
 
 // // sort latters in reverse alphabetical sorting
