@@ -70,13 +70,12 @@ for (let a = 0; a < products.length; a += 1) {
     let element = products[a].id;    
     for (let b = a + 1; b < products.length; b += 1)
         if (products[b].id === element) { 
-            products[a].qty + products[b].qty;
+            products[a].qty += products[b].qty;
             products.splice(b, 1);
             a -= 1;
-            }
-    console.log(products);
+            }    
 }
-
+console.log(products);
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 18.12.2021 )
 
