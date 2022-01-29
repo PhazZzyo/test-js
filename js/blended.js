@@ -1,4 +1,7 @@
 // "use strict";
+// -------------- --------- ---- ====***** ( Exercise of blended lesson 29.01.2022 )
+
+
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 15.01.2022 )
 // Create object with 3 keys: userName, cardName, total.
@@ -39,43 +42,43 @@
 
 // ---=== new task ===---
 
-// перебрать масив
-// мутировать, щоб залишилися лише унікальні id
-// якщо однакові Id сплюсувати значення qty
+// // перебрать масив
+// // мутировать, щоб залишилися лише унікальні id
+// // якщо однакові Id сплюсувати значення qty
 
-const products = [ {
-    id : 'sku1',
-    qty: 1,
-}, {
-    id : 'sku2',
-    qty: 2,
-}, {
-    id : 'sku3',
-    qty: 3,
-}, {
-    id : 'sku1',
-    qty: 6,
-}, {
-    id : 'sku1',
-    qty: 8,
-}, {
-    id : 'sku2',
-    qty: 19,
-}, {
-    id : 'sku4',
-    qty: 1,
-    }]
+// const products = [ {
+//     id : 'sku1',
+//     qty: 1,
+// }, {
+//     id : 'sku2',
+//     qty: 2,
+// }, {
+//     id : 'sku3',
+//     qty: 3,
+// }, {
+//     id : 'sku1',
+//     qty: 6,
+// }, {
+//     id : 'sku1',
+//     qty: 8,
+// }, {
+//     id : 'sku2',
+//     qty: 19,
+// }, {
+//     id : 'sku4',
+//     qty: 1,
+//     }]
 
-for (let a = 0; a < products.length; a += 1) { 
-    let element = products[a].id;    
-    for (let b = a + 1; b < products.length; b += 1)
-        if (products[b].id === element) { 
-            products[a].qty += products[b].qty;
-            products.splice(b, 1);
-            a -= 1;
-            }    
-}
-console.log(products);
+// for (let a = 0; a < products.length; a += 1) { 
+//     let element = products[a].id;    
+//     for (let b = a + 1; b < products.length; b += 1)
+//         if (products[b].id === element) { 
+//             products[a].qty += products[b].qty;
+//             products.splice(b, 1);
+//             a -= 1;
+//             }    
+// }
+// console.log(products);
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 18.12.2021 )
 
