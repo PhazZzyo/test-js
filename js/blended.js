@@ -1,7 +1,118 @@
 // "use strict";
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 29.01.2022 )
 
+// Потрібно створити функцію яка буде приймати 1 параметр (масив юзерів) і серед
+// них шукати Нарциса і повертати його імя(стрінгою) якщо в масиві немає Нарциса
+// функція повертає пусту стрінгу, умова заключається в тому що НАРЦИС не знає нікого НАРЦИСА знають ВСІ
 
+// нарцис  'Jhon'
+
+const people_01 = [
+  {
+    name: "Alex",
+    know: ["Alex", "Jhon"],
+  },
+  {
+    name: "Jhon",
+    know: [],
+  },
+  {
+    name: "Eva",
+    know: ["Alex", "Jhon"],
+  },
+  {
+    name: "Ivan",
+    know: ["Jhon", "Eva"],
+  },
+];
+
+// немає нарциса
+
+const people_02 = [
+  {
+    name: "Alex",
+    know: ["Alex", "Jhon"],
+  },
+  {
+    name: "Jhon",
+    know: [],
+  },
+  {
+    name: "Eva",
+    know: [],
+  },
+  {
+    name: "Ivan",
+    know: ["Jhon", "Eva"],
+  },
+];
+
+// немає нарциса
+
+const people_03 = [
+  {
+    name: "Alex",
+    know: ["Alex", "Eva"],
+  },
+  {
+    name: "Jhon",
+    know: [],
+  },
+  {
+    name: "Eva",
+    know: ["Alex", "Jhon"],
+  },
+  {
+    name: "Ivan",
+    know: ["Jhon", "Eva"],
+  },
+];
+
+// немає нарциса
+
+const people_04 = [
+  {
+    name: "Alex",
+    know: ["Alex", "Jhon"],
+  },
+  {
+    name: "Jhon",
+    know: ["Eva"],
+  },
+  {
+    name: "Eva",
+    know: ["Alex", "Jhon"],
+  },
+  {
+    name: "Ivan",
+    know: ["Jhon", "Eva"],
+  },
+];
+
+function findNarcissus(array) {
+  array.forEach((element) => {
+    if (element.know.length === 0) {
+      const name = element.name;
+        console.log(name);
+        else ()
+    }
+  });
+
+  //   console.log(array);
+
+  // let isNarcissus = array.every(console.log(array));
+
+  // const check = (array.element) => {
+  //         if (array.know === ['']) {
+  //         array.forEach((element) => {
+  //             array.
+  //         });
+}
+
+findNarcissus(people_01);
+findNarcissus(people_02);
+findNarcissus(people_03);
+findNarcissus(people_04);
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 15.01.2022 )
 // Create object with 3 keys: userName, cardName, total.
@@ -15,7 +126,7 @@
 //     balance() {
 //         console.log(`User ${this.userName} have balance: ${this.userTotal}`);
 //     },
-    
+
 //     add(income) {
 //         console.log(`User ${this.userName} add ${income} to card: ${this.cardName}, total:${this.userTotal += income}`);
 //     },
@@ -69,14 +180,14 @@
 //     qty: 1,
 //     }]
 
-// for (let a = 0; a < products.length; a += 1) { 
-//     let element = products[a].id;    
+// for (let a = 0; a < products.length; a += 1) {
+//     let element = products[a].id;
 //     for (let b = a + 1; b < products.length; b += 1)
-//         if (products[b].id === element) { 
+//         if (products[b].id === element) {
 //             products[a].qty += products[b].qty;
 //             products.splice(b, 1);
 //             a -= 1;
-//             }    
+//             }
 // }
 // console.log(products);
 
@@ -87,7 +198,6 @@
 // const newArray = ['rabbit'];
 // const mutedArray = newArray.join(' ').split('').sort().reverse().join('');
 // console.log(`rabbit in reverse alphabetical sorting = ${mutedArray}`);
-
 
 // // filter cars within price range
 
@@ -110,13 +220,12 @@
 // // console.log(filterCars);
 
 // const filterCars = cars.filter((element) => {
-//   if (element.cost >= minValue && element.cost <= maxValue) { 
+//   if (element.cost >= minValue && element.cost <= maxValue) {
 //     return (element);
 //   }
 //   console.log(element);
 // });
 // console.log(filterCars);
-
 
 // ----------------------------------------------------------------------
 
@@ -145,14 +254,13 @@
 
 // console.log(totalAge);
 
-
 // const friends = [
 //     { name: "Anna", books: ["Bible", "Harry Potter"], age: 21 },
 //     { name: "Bob", books: ["War and peace", "Romeo and Juliet"], age: 26 },
 //     { name: "Alice", books: ["War and peace", "Romeo and Juliet"], age: 26},
 //     { name: "Oleksii", books: ["Bible","War and peace","Harry Potter",  "Romeo and Juliet"], age: 26},
 // ]
-// // Порахувати кількість книжок, у тих користувачів, у яких є книга "Harry Potter" 
+// // Порахувати кількість книжок, у тих користувачів, у яких є книга "Harry Potter"
 // // не використовуючи метод includes
 // //console.log(~-4);
 // //console.log(-1-(-4));
@@ -161,7 +269,7 @@
 // const totalBooks = friends.reduce((totalCountOfBooks, user) => {
 //     //console.log(!!~user.books.indexOf(searchBook));
 //     if (!!~user.books.indexOf(searchBook)){
-//         totalCountOfBooks += user.books.length; 
+//         totalCountOfBooks += user.books.length;
 //     } else {
 //         totalCountOfBooks += 0;
 //     }
@@ -170,7 +278,6 @@
 // console.log (totalBooks);
 // // якщо така книга є, то порахувати всі книжки
 
-
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 4.12.2021 )
 
 // const all = ['apple', 'banana', 'tomato', 'potato', 'cucumber', 'orange', 'carrot', 'ananas'];
@@ -178,9 +285,9 @@
 // const fruits = [];
 
 //   for (const element of all) {
-//     if (!vegetables.includes(element)) {     
+//     if (!vegetables.includes(element)) {
 //       fruits.push(element);
 //     }
 // }
-  
-//   console.log(`Fruits are: ${fruits}`);  
+
+//   console.log(`Fruits are: ${fruits}`);
