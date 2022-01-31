@@ -90,29 +90,39 @@ const people_04 = [
 ];
 
 function findNarcissus(array) {
+  console.dir(array);
+  // console.log(`'initial array ${array}'`);
+  const temp = [];
+  let elName = "";
   array.forEach((element) => {
     if (element.know.length === 0) {
-      const name = element.name;
-        console.log(name);
-        else ()
+      elName = element.name;
+      // console.log(`'suspect ${elName}'`);
+    } else {
+      temp.push(element);
+      // console.log(`'Pushed element ${element.name}'`);
     }
+    // console.log(`'temp array ${temp}'`);
   });
-
-  //   console.log(array);
-
-  // let isNarcissus = array.every(console.log(array));
-
-  // const check = (array.element) => {
-  //         if (array.know === ['']) {
-  //         array.forEach((element) => {
-  //             array.
-  //         });
+  if (temp.every((Object) => Object.know.includes(elName))) {
+    console.log(`'Array ${array} have narcissus named ${elName}'`);
+  } else {
+    console.log(`'Array ${array} have no narcissus'`);
+  }
 }
 
 findNarcissus(people_01);
 findNarcissus(people_02);
 findNarcissus(people_03);
 findNarcissus(people_04);
+
+// recycled
+// console.log(`"checking ${element.name}"`);
+// array.every((object) =>
+//   // object.know.includes(element.name) && object.name !== element.name
+//   console.log(`'object.know ${object.know}, object.name ${object.name}'`)
+// );
+// console.log(`'temp array ${temp}'`);
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 15.01.2022 )
 // Create object with 3 keys: userName, cardName, total.
