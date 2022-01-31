@@ -89,9 +89,11 @@ const people_04 = [
   },
 ];
 
+// function logger(elName) {
+
+// }
+
 function findNarcissus(array) {
-  console.dir(array);
-  // console.log(`'initial array ${array}'`);
   const temp = [];
   let elName = "";
   array.forEach((element) => {
@@ -105,16 +107,34 @@ function findNarcissus(array) {
     // console.log(`'temp array ${temp}'`);
   });
   if (temp.every((Object) => Object.know.includes(elName))) {
-    console.log(`'Array ${array} have narcissus named ${elName}'`);
+    // console.log(`'Array ${counter} have narcissus named ${elName}'`);
+    // console.log(logger(elName));
+    return elName;
   } else {
-    console.log(`'Array ${array} have no narcissus'`);
+    return (elName = "undefined");
+    // console.log(`'Array ${counter} have no narcissus'`);
   }
 }
 
-findNarcissus(people_01);
-findNarcissus(people_02);
-findNarcissus(people_03);
-findNarcissus(people_04);
+function fn(...args) {
+  let counter = 0;
+  args.forEach((arg) => {
+    findNarcissus(arg);
+    if (typeof elName !== "undefined") {
+      console.log(elName);
+      console.log(`'Array ${counter} have narcissus named ${elName}'`);
+    }
+    console.log(`'Array ${counter} have no narcissus'`);
+    counter += 1;
+  });
+}
+
+fn(people_01, people_02, people_03, people_04);
+
+// findNarcissus(people_01);
+// findNarcissus(people_02);
+// findNarcissus(people_03);
+// findNarcissus(people_04);
 
 // recycled
 // console.log(`"checking ${element.name}"`);
