@@ -89,7 +89,26 @@ const people_04 = [
   },
 ];
 
-let counter = 1;
+const people_05 = [
+  {
+    name: "Alex",
+    know: ["Alex", "Eva"],
+  },
+  {
+    name: "Jhon",
+    know: [],
+  },
+  {
+    name: "Eva",
+    know: [],
+  },
+  {
+    name: "Ivan",
+    know: ["Jhon", "Eva"],
+  },
+];
+
+let counter = 0;
 
 const logger = (elName) => {
   if (typeof elName !== "undefined") {
@@ -100,45 +119,30 @@ const logger = (elName) => {
 };
 
 function findNarcissus(array) {
-  const temp = [];
+  counter += 1;
   let elName = "";
   array.forEach((element) => {
     if (element.know.length === 0) {
       elName = element.name;
-    } else {
-      temp.push(element);
+      const tempArray = array.filter((element) => element.name !== elName);
+      const findNarcissus = tempArray.every((element) =>
+        element.know.includes(elName)
+      );
+      if (findNarcissus === true) {
+        logger(elName);
+      }
+      logger();
     }
   });
-
-  if (temp.every((Object) => Object.know.includes(elName))) {
-    console.log(logger(elName));
-  } else {
-    console.log(logger());
-  }
 }
 
 function fn(...args) {
   args.forEach((arg) => {
     findNarcissus(arg);
-    counter += 1;
   });
 }
 
-fn(people_01, people_02, people_03, people_04);
-
-// recycled
-
-// findNarcissus(people_01);
-// findNarcissus(people_02);
-// findNarcissus(people_03);
-// findNarcissus(people_04);
-
-// console.log(`"checking ${element.name}"`);
-// array.every((object) =>
-//   // object.know.includes(element.name) && object.name !== element.name
-//   console.log(`'object.know ${object.know}, object.name ${object.name}'`)
-// );
-// console.log(`'temp array ${temp}'`);
+fn(people_01, people_02, people_03, people_04, people_05);
 
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 15.01.2022 )
 // Create object with 3 keys: userName, cardName, total.
