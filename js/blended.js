@@ -144,6 +144,25 @@ function fn(...args) {
 
 fn(people_01, people_02, people_03, people_04, people_05);
 
+// Alternative way from Artem
+
+// function findNar(arr) {
+//   const maybeNar = arr.filter((item) => !item.know.length);
+
+//   if (maybeNar.length !== 1) {
+//     return "";
+//   }
+
+//   const name = maybeNar[0].name;
+//   const response = arr
+//     .filter((item) => item.know.length)
+//     .every((item) => item.know.includes(name));
+
+//   return response ? name : "";
+// }
+
+// findNar(peoples);
+
 // -------------- --------- ---- ====***** ( Exercise of blended lesson 15.01.2022 )
 // Create object with 3 keys: userName, cardName, total.
 // Create 3 methods of object: balance, add, writeoff.
